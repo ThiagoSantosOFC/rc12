@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Ficha 3</title>
+</head>
+<body>
+    <section  class="conteudo">
+        <h1>Formulário de Inserção de clientes</h1>
+        <div class="form">
+           
+            <form action="inserir.php" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade">
+                <br>
+               <button>inserir</button>
+            </form>
+        </div>
+        <div class="Ver users">
+            <form action="ver.php" method="get">
+                <button>ver clientes</button>
+            </form>
+
+        </div>
+        <div class="deletar users">
+            <form action="deletar.php" method="get">
+                
+                <label for="nome">ID </label>
+                <br>
+                <input type="number" name="id" id="id">
+                
+                <button>deletar clientes</button>
+            </form>
+
+
+        </div>
+    </section>
+</body>
+</html>
