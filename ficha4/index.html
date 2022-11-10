@@ -1,0 +1,75 @@
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    
+    <title>Gestor de alunos</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="conteudo">
+           
+            <form action="alunosAdd.php" method="POST" id="formAdd">
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="telefone">Telefone</label>
+                <br>
+                <input type="text" name="telefone" id="telefone">
+                <br>
+                <label for="ano">Ano</label>
+                <br>
+                <select name="ano" id="ano">
+                    <option value="1">1º ano</option>
+                    <option value="2">2º ano</option>
+                    <option value="3">3º ano</option>
+                    <option value="4">4º ano</option>
+                    <option value="5">5º ano</option>
+                    <option value="6">6º ano</option>
+                    <option value="7">7º ano</option>
+                    <option value="8">8º ano</option>
+                    <option value="9">9º ano</option>
+                    <option value="10">10º ano</option>
+                    <option value="11">11º ano</option>
+                    <option value="12">12º ano</option>
+                </select>
+                <br>
+                <label for="turma">Turma</label>
+                <br>
+                <input type="text" name="turma" id="turma">
+                <br>
+                
+                <label for="username">Username</label>
+                <br>
+                <input type="text" name="username" id="username">
+                <br>
+
+                <label for="password">Password</label>
+                <br>
+                <input required minlength="8" type="password" name="password" id="password">
+                <br>
+                
+                <label required minlength="8" for="confirmarPassword">Confirmar Password</label>
+                <br>
+                <input type="password" name="confirmarPassword" id="confirmarPassword">
+                <br>
+
+
+                <button>Enviar</button>
+
+        </div>
+
+    </section>
+
+</body>
+<script src="public/Verifica.js"></script>
+</html>
