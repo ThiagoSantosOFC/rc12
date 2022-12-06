@@ -1,6 +1,6 @@
 <?php
 
-require_once 'controllers/ligarBD.php';
+require_once 'ligarBD.php';
 
 //criar tabela clientes na db empresax
 $sql = "CREATE TABLE IF NOT EXISTS `alunos4e_t2`.`alunos`(

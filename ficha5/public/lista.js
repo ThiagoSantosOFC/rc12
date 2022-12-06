@@ -1,16 +1,22 @@
 'use strict';
 
+let tabela = document.getElementById('tabela');
 
-//go to listar.php when page loads
-window.onload = function() {
-    window.location.href = "../controllers/listar.php";
-    //fecth json data from listar.php
-    fetch("../controllers/listar.php")
-        .then(response => response.json(Alunos))
-        .then(data => {
-            console.log(data);
-        }
-    );
+
+
+//function arrow to get alunos json
+const getAlunos = async () => {
 
     
+    const response = await fetch('http://localhost:80/listar.php');
+    const data = await response.json();
+    console.log(data);
+    return data;
+}
+
+//get alunos json when page loads
+window.onload = function() {
+    getAlunos();
+
+
 }

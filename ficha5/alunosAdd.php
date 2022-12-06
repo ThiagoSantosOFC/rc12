@@ -28,6 +28,9 @@ if ($result->num_rows > 0) {
     if ($conn->query($sql) === TRUE) {
         echo json_encode(array('status' => 'ok', 'message' => 'aluno adicionado com sucesso'));
         $conn->close();
+        //go to listar.html
+        header('Location: listar.html');
+        
     } else {
         echo json_encode(array('status' => 'erro ao adicionar aluno' . $conn->error));
         $conn->close();

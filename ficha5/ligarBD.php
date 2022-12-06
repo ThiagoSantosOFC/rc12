@@ -14,6 +14,6 @@ if ($conn->connect_error) {
     
 }
 
-echo json_encode(array('status' => 'ok'));
+json_encode(array('status' => 'ok'));
 
 ?>
