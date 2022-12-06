@@ -10,29 +10,17 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 
-    $alunos = array();
-   
+    //get data of each row
     while ($row = $result->fetch_assoc()) {
         $alunos[] = $row;
     }
-    return $data = json_encode($alunos);
-
-    
+    //parse alunos to json
+    echo json_encode($alunos);
+    //close connection
     $conn->close();
-
-    
- 
-
-   
-   
-
 } else {
     //close connection
 
     return json_encode(array('status' => 'sem alunos'));
     $conn->close();
-    
 }
-
-
-$conn->close();
