@@ -89,3 +89,28 @@
     color: white;
     text-align: center;
 }
+
+.tabela  {
+
+    
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+.tabela td {
+    border: 1px solid black;
+
+}
+
+.tabela th {
+    border: 1px solid black;
+}
