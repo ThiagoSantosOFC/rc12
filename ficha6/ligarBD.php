@@ -15,5 +15,7 @@ if ($conn->connect_error) {
 }
 
 json_encode(array('status' => 'ok'));
+mysqli_set_charset($conn, "utf8");
+ 
 
 ?>

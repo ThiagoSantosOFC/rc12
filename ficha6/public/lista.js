@@ -3,7 +3,7 @@
 //function arrow to get alunos json
 const getAlunos = async () => {
   const response = await fetch(
-    "http://localhost/fichas/rc12/ficha5/listar.php"
+    "http://localhost/fichas/rc12/ficha5/ordenar.php?ordenar=turma"
   );
   const data = await response.json();
   console.log(data);
@@ -17,6 +17,7 @@ const MostrarAlunos = () => {
           data.forEach((aluno) => {
             let tr = document.createElement("tr");
             let td = document.createElement("td");
+        
             td.innerHTML = aluno.nome;
             tr.appendChild(td);
             td = document.createElement("td");
@@ -75,7 +76,7 @@ window.onload = function () {
     }
     else {
         console.log("não existe tabela");
-        
+
     }
 
 };
