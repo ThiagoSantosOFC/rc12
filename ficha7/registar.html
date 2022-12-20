@@ -1,0 +1,62 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css" />
+    <script src="public/Verifica.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <section class="conteudo">
+        <h1>
+            Registar sua conta
+        </h1>
+        <p>
+            Se já tem uma conta, <a href="index.html">entrar</a>
+        </p>
+        <div class="form">
+
+            <form id="formReg" action="registar.php" method="POST" >
+                <div class="form-group
+                ">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                </div>
+
+                <div class="form-group
+                ">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group
+                ">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+
+                <div class="form-group
+                ">
+                    <label for="password2">Confirmar Password</label>
+                    <input type="password" name="password2" id="password2" placeholder="Confirmar Password" required>
+                </div>
+
+                <div class="form-group
+                ">
+                    <button>Registar</button>
+                </div>
+
+
+            </form>
+
+
+
+        </div>
+
+
+
+    </section>
+    
+</body>
+</html>
