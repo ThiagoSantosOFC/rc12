@@ -1,13 +1,10 @@
 "use strict";
 
-let formlogin = document.getElementById("formReg");
-
-
+let formlogin = document.getElementById("formlogin");
 console.log(formlogin);
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let password2 = document.getElementById("password2");
-
 
 try {
     formlogin.addEventListener("submit", function (e) {
